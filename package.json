@@ -25,5 +25,12 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
     "typescript": "^5"
+  },
+  "pnpm": {
+    "overrides": {
+      "yargs": "17.7.2",
+      "nanoid": "3.3.8",
+      "electron-to-chromium": "1.5.350"
+    }
   }
 }
