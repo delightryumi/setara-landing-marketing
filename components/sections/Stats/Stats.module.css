@@ -1,0 +1,104 @@
+.section {
+  padding: 60px 24px;
+  background: var(--color-canvas);
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.2s ease;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.subtitle {
+  color: var(--color-primary);
+  font-family: var(--font-sans), sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.title {
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(32px, 4vw, 42px);
+  font-weight: 700;
+  color: var(--color-ink);
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.statCard {
+  background: var(--color-surface-card);
+  border-radius: var(--rounded-lg);
+  padding: 40px 32px;
+  border: 1px solid var(--color-hairline);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.04);
+}
+
+.number {
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(48px, 5vw, 64px);
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.label {
+  font-family: var(--font-display), sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-ink);
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.desc {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 14px;
+  color: var(--color-body);
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .statCard {
+    padding: 32px 24px;
+  }
+}

@@ -1,0 +1,122 @@
+.section {
+  padding: 60px 24px;
+  background: var(--color-canvas);
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.2s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.subtitle {
+  color: var(--color-primary);
+  font-family: var(--font-sans), sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.title {
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(32px, 4vw, 42px);
+  font-weight: 700;
+  color: var(--color-ink);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item {
+  background: var(--color-surface-card);
+  border-radius: var(--rounded-md);
+  border: 1px solid var(--color-hairline);
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  border-color: rgba(234, 40, 4, 0.2);
+}
+
+.itemOpen {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(234, 40, 4, 0.04);
+}
+
+.questionButton {
+  width: 100%;
+  padding: 20px 24px;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  text-align: left;
+  color: var(--color-ink);
+  font-family: var(--font-sans), sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.questionButton:hover {
+  color: var(--color-primary);
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-charcoal);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.itemOpen .iconWrapper {
+  transform: rotate(180deg);
+  color: var(--color-primary);
+}
+
+.answerWrapper {
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+  overflow: hidden;
+}
+
+.answerText {
+  padding: 0 24px 20px 24px;
+  margin: 0;
+  font-family: var(--font-sans), sans-serif;
+  font-size: 14px;
+  color: var(--color-body);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .questionButton {
+    padding: 16px 20px;
+    font-size: 15px;
+  }
+  .answerText {
+    padding: 0 20px 16px 20px;
+  }
+}

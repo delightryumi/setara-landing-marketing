@@ -1,0 +1,49 @@
+.section {
+  padding: 64px 24px;
+  background: var(--color-canvas);
+  border-top: 1px solid var(--color-hairline);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-family: var(--font-display), sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-ink);
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.desc {
+  color: var(--color-charcoal);
+  font-family: var(--font-sans), sans-serif;
+  font-size: 15px;
+}
+
+.logoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.logoItem {
+  font-family: var(--font-display), sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-stone);
+  letter-spacing: -1px;
+}
+
