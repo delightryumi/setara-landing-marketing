@@ -31,6 +31,12 @@
       "yargs": "17.7.2",
       "nanoid": "3.3.8",
       "electron-to-chromium": "1.5.350"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "@firebase/util",
+      "protobufjs",
+      "sharp",
+      "unrs-resolver"
+    ]
   }
 }
