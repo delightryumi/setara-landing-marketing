@@ -19,7 +19,12 @@ export default function Footer() {
               <a href="mailto:admin@mytara.id" className={styles.contactItem}>
                 <EnvelopeSimple size={20} /> admin@mytara.id
               </a>
-              <a href="https://wa.me/6281215070307" className={styles.contactItem}>
+              <a 
+                href="https://wa.me/6281215070307?text=Halo%20Admin%20Tara%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%20aplikasi%20My%20Tara." 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={styles.contactItem}
+              >
                 <Phone size={20} /> +62 812-1507-0307
               </a>
               <div className={styles.contactItem} style={{ alignItems: "flex-start" }}>

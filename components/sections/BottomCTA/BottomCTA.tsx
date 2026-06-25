@@ -55,12 +55,14 @@ export default function BottomCTA() {
               <p className={styles.description}>
                 Bergabung dengan ratusan properti lainnya yang telah mempercayakan operasionalnya pada ekosistem Tara.
               </p>
-              <button
-                onClick={() => window.dispatchEvent(new CustomEvent("open-lead-modal", { detail: { type: "sales" } }))}
+              <a
+                href="https://wa.me/6281215070307?text=Halo%20Admin%20Tara%2C%20saya%20tertarik%20dengan%20solusi%20kemitraan%20Tara%20dan%20ingin%20berkonsultasi%20dengan%20tim%20sales."
+                target="_blank"
+                rel="noopener noreferrer"
                 className={styles.primaryCta}
               >
                 Hubungi Sales Sekarang
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -87,7 +89,7 @@ export default function BottomCTA() {
         )}
 
         <a 
-          href="https://wa.me/6281215070307" 
+          href="https://wa.me/6281215070307?text=Halo%20Admin%20Tara%2C%20saya%20ingin%20tahu%20lebih%20banyak%20tentang%20aplikasi%20My%20Tara." 
           target="_blank" 
           rel="noopener noreferrer" 
           className={styles.waCapsule} 

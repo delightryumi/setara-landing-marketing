@@ -65,12 +65,14 @@ export default function Pricing() {
                 Basic Profit & Loss Report
               </li>
             </ul>
-            <button
-              onClick={() => window.dispatchEvent(new CustomEvent("open-lead-modal", { detail: { type: "sales" } }))}
+            <a
+              href="https://wa.me/6281215070307?text=Halo%20Admin%20Tara%2C%20saya%20tertarik%20dengan%20paket%20Starter%20%2F%20UMKM.%20Boleh%20minta%20info%20lebih%20detail%3F"
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.ctaButton}
             >
               Hubungi Sales
-            </button>
+            </a>
           </div>
 
           {/* Business Plan */}
@@ -100,12 +102,14 @@ export default function Pricing() {
                 Live Kitchen Display System (KDS)
               </li>
             </ul>
-            <button
-              onClick={() => window.dispatchEvent(new CustomEvent("open-lead-modal", { detail: { type: "demo" } }))}
+            <a
+              href="https://wa.me/6281215070307?text=Halo%20Admin%20Tara%2C%20saya%20tertarik%20dengan%20paket%20Business%20dan%20ingin%20mengajukan%20request%20demo.%20Boleh%20dibantu%20prosesnya%3F"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`${styles.ctaButton} ${styles.highlightedCta}`}
             >
               Request Demo
-            </button>
+            </a>
           </div>
 
           {/* Enterprise Plan */}
@@ -134,12 +138,14 @@ export default function Pricing() {
                 Priority 24/7 Support
               </li>
             </ul>
-            <button
-              onClick={() => window.dispatchEvent(new CustomEvent("open-lead-modal", { detail: { type: "sales" } }))}
+            <a
+              href="https://wa.me/6281215070307?text=Halo%20Admin%20Tara%2C%20saya%20tertarik%20dengan%20paket%20Enterprise.%20Boleh%20minta%20info%20lebih%20detail%20untuk%20kebutuhan%20korporasi%20kami%3F"
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.ctaButton}
             >
               Hubungi Sales
-            </button>
+            </a>
           </div>
 
           {/* Customise Plan */}
@@ -160,12 +166,14 @@ export default function Pricing() {
                 Custom White-label Domain
               </li>
             </ul>
-            <button
-              onClick={() => window.dispatchEvent(new CustomEvent("open-lead-modal", { detail: { type: "sales" } }))}
+            <a
+              href="https://wa.me/6281215070307?text=Halo%20Admin%20Tara%2C%20saya%20memiliki%20kebutuhan%20kustomisasi%20sistem%20dan%20ingin%20berkonsultasi%20dengan%20tim%20sales."
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.ctaButton}
             >
               Hubungi Sales
-            </button>
+            </a>
           </div>
         </div>
       </div>

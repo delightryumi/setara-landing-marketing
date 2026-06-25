@@ -51,18 +51,22 @@ export default function Hero() {
             Ekosistem sistem terintegrasi untuk mengelola puluhan cabang hotel dan restoran dari satu layar Superadmin.
           </p>
           <div className={styles.ctaGroup}>
-            <button
-              onClick={() => window.dispatchEvent(new CustomEvent("open-lead-modal", { detail: { type: "free" } }))}
+            <a
+              href="https://wa.me/6281215070307?text=Halo%20Admin%20Tara%2C%20saya%20ingin%20mencoba%20gratis%20%2F%20request%20demo%20aplikasi%20My%20Tara."
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.primaryCta}
             >
               Coba Gratis / Request Demo
-            </button>
-            <button
-              onClick={() => window.dispatchEvent(new CustomEvent("open-lead-modal", { detail: { type: "sales" } }))}
+            </a>
+            <a
+              href="https://wa.me/6281215070307?text=Halo%20Admin%20Tara%2C%20saya%20ingin%20berkonsultasi%20dengan%20tim%20sales%20mengenai%20aplikasi%20My%20Tara."
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.secondaryCta}
             >
               Hubungi Sales
-            </button>
+            </a>
           </div>
         </div>
 
